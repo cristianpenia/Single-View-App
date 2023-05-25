@@ -16,6 +16,13 @@
 		8FE4AD292A200A600035BFB6 /* Single_View_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD282A200A600035BFB6 /* Single_View_AppTests.swift */; };
 		8FE4AD332A200A600035BFB6 /* Single_View_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD322A200A600035BFB6 /* Single_View_AppUITests.swift */; };
 		8FE4AD352A200A600035BFB6 /* Single_View_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD342A200A600035BFB6 /* Single_View_AppUITestsLaunchTests.swift */; };
+		8FE4AD472A200D0C0035BFB6 /* SVAHomeMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD462A200D0C0035BFB6 /* SVAHomeMain.swift */; };
+		8FE4AD4C2A200D2A0035BFB6 /* SVAHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD4B2A200D2A0035BFB6 /* SVAHomePresenter.swift */; };
+		8FE4AD4E2A200D310035BFB6 /* SVAHomeIntereactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD4D2A200D310035BFB6 /* SVAHomeIntereactor.swift */; };
+		8FE4AD502A200D410035BFB6 /* SVAHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD4F2A200D410035BFB6 /* SVAHomeRouter.swift */; };
+		8FE4AD552A200DE80035BFB6 /* SVAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD532A200DE80035BFB6 /* SVAHomeViewController.swift */; };
+		8FE4AD562A200DE80035BFB6 /* SVAHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4AD542A200DE80035BFB6 /* SVAHomeViewController.xib */; };
+		8FE4AD592A200F040035BFB6 /* SVAHomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD582A200F040035BFB6 /* SVAHomeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		8FE4AD2E2A200A600035BFB6 /* Single View AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Single View AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE4AD322A200A600035BFB6 /* Single_View_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Single_View_AppUITests.swift; sourceTree = "<group>"; };
 		8FE4AD342A200A600035BFB6 /* Single_View_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Single_View_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FE4AD462A200D0C0035BFB6 /* SVAHomeMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVAHomeMain.swift; sourceTree = "<group>"; };
+		8FE4AD4B2A200D2A0035BFB6 /* SVAHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVAHomePresenter.swift; sourceTree = "<group>"; };
+		8FE4AD4D2A200D310035BFB6 /* SVAHomeIntereactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVAHomeIntereactor.swift; sourceTree = "<group>"; };
+		8FE4AD4F2A200D410035BFB6 /* SVAHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVAHomeRouter.swift; sourceTree = "<group>"; };
+		8FE4AD532A200DE80035BFB6 /* SVAHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVAHomeViewController.swift; sourceTree = "<group>"; };
+		8FE4AD542A200DE80035BFB6 /* SVAHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVAHomeViewController.xib; sourceTree = "<group>"; };
+		8FE4AD582A200F040035BFB6 /* SVAHomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVAHomeProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +113,13 @@
 		8FE4AD102A200A5D0035BFB6 /* Single View App */ = {
 			isa = PBXGroup;
 			children = (
-				8FE4AD112A200A5D0035BFB6 /* AppDelegate.swift */,
-				8FE4AD132A200A5D0035BFB6 /* SceneDelegate.swift */,
+				8FE4AD1F2A200A5F0035BFB6 /* Info.plist */,
+				8FE4AD422A200A750035BFB6 /* SVASetup */,
+				8FE4AD432A200AA90035BFB6 /* SVASplashScreen */,
+				8FE4AD442A200AB40035BFB6 /* SVAHome */,
+				8FE4AD412A200A690035BFB6 /* SVACommon */,
 				8FE4AD152A200A5D0035BFB6 /* ViewController.swift */,
 				8FE4AD172A200A5D0035BFB6 /* Main.storyboard */,
-				8FE4AD1A2A200A5F0035BFB6 /* Assets.xcassets */,
-				8FE4AD1C2A200A5F0035BFB6 /* LaunchScreen.storyboard */,
-				8FE4AD1F2A200A5F0035BFB6 /* Info.plist */,
 			);
 			path = "Single View App";
 			sourceTree = "<group>";
@@ -125,6 +139,69 @@
 				8FE4AD342A200A600035BFB6 /* Single_View_AppUITestsLaunchTests.swift */,
 			);
 			path = "Single View AppUITests";
+			sourceTree = "<group>";
+		};
+		8FE4AD412A200A690035BFB6 /* SVACommon */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4AD1A2A200A5F0035BFB6 /* Assets.xcassets */,
+			);
+			path = SVACommon;
+			sourceTree = "<group>";
+		};
+		8FE4AD422A200A750035BFB6 /* SVASetup */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4AD132A200A5D0035BFB6 /* SceneDelegate.swift */,
+				8FE4AD112A200A5D0035BFB6 /* AppDelegate.swift */,
+			);
+			path = SVASetup;
+			sourceTree = "<group>";
+		};
+		8FE4AD432A200AA90035BFB6 /* SVASplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4AD1C2A200A5F0035BFB6 /* LaunchScreen.storyboard */,
+			);
+			path = SVASplashScreen;
+			sourceTree = "<group>";
+		};
+		8FE4AD442A200AB40035BFB6 /* SVAHome */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4AD462A200D0C0035BFB6 /* SVAHomeMain.swift */,
+				8FE4AD482A200D0E0035BFB6 /* SVAHomeView */,
+				8FE4AD4B2A200D2A0035BFB6 /* SVAHomePresenter.swift */,
+				8FE4AD4D2A200D310035BFB6 /* SVAHomeIntereactor.swift */,
+				8FE4AD512A200D520035BFB6 /* SVAHomeEntity */,
+				8FE4AD4F2A200D410035BFB6 /* SVAHomeRouter.swift */,
+				8FE4AD582A200F040035BFB6 /* SVAHomeProtocol.swift */,
+				8FE4AD522A200D6D0035BFB6 /* SVAHomeExtension */,
+			);
+			path = SVAHome;
+			sourceTree = "<group>";
+		};
+		8FE4AD482A200D0E0035BFB6 /* SVAHomeView */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4AD532A200DE80035BFB6 /* SVAHomeViewController.swift */,
+				8FE4AD542A200DE80035BFB6 /* SVAHomeViewController.xib */,
+			);
+			path = SVAHomeView;
+			sourceTree = "<group>";
+		};
+		8FE4AD512A200D520035BFB6 /* SVAHomeEntity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SVAHomeEntity;
+			sourceTree = "<group>";
+		};
+		8FE4AD522A200D6D0035BFB6 /* SVAHomeExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SVAHomeExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE4AD562A200DE80035BFB6 /* SVAHomeViewController.xib in Resources */,
 				8FE4AD1E2A200A5F0035BFB6 /* LaunchScreen.storyboard in Resources */,
 				8FE4AD1B2A200A5F0035BFB6 /* Assets.xcassets in Resources */,
 				8FE4AD192A200A5D0035BFB6 /* Main.storyboard in Resources */,
@@ -258,9 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE4AD552A200DE80035BFB6 /* SVAHomeViewController.swift in Sources */,
+				8FE4AD472A200D0C0035BFB6 /* SVAHomeMain.swift in Sources */,
 				8FE4AD162A200A5D0035BFB6 /* ViewController.swift in Sources */,
 				8FE4AD122A200A5D0035BFB6 /* AppDelegate.swift in Sources */,
+				8FE4AD502A200D410035BFB6 /* SVAHomeRouter.swift in Sources */,
 				8FE4AD142A200A5D0035BFB6 /* SceneDelegate.swift in Sources */,
+				8FE4AD4E2A200D310035BFB6 /* SVAHomeIntereactor.swift in Sources */,
+				8FE4AD4C2A200D2A0035BFB6 /* SVAHomePresenter.swift in Sources */,
+				8FE4AD592A200F040035BFB6 /* SVAHomeProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
