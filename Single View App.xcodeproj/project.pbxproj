@@ -23,6 +23,7 @@
 		8FE4AD552A200DE80035BFB6 /* SVAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD532A200DE80035BFB6 /* SVAHomeViewController.swift */; };
 		8FE4AD562A200DE80035BFB6 /* SVAHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4AD542A200DE80035BFB6 /* SVAHomeViewController.xib */; };
 		8FE4AD592A200F040035BFB6 /* SVAHomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD582A200F040035BFB6 /* SVAHomeProtocol.swift */; };
+		8FE4AD5D2A201AE40035BFB6 /* SVARates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4AD5C2A201AE40035BFB6 /* SVARates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8FE4AD532A200DE80035BFB6 /* SVAHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVAHomeViewController.swift; sourceTree = "<group>"; };
 		8FE4AD542A200DE80035BFB6 /* SVAHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVAHomeViewController.xib; sourceTree = "<group>"; };
 		8FE4AD582A200F040035BFB6 /* SVAHomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVAHomeProtocol.swift; sourceTree = "<group>"; };
+		8FE4AD5C2A201AE40035BFB6 /* SVARates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVARates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,8 @@
 		8FE4AD512A200D520035BFB6 /* SVAHomeEntity */ = {
 			isa = PBXGroup;
 			children = (
+				8FE4AD5B2A201AD30035BFB6 /* SVAExternal */,
+				8FE4AD5A2A201ACB0035BFB6 /* SVAInternal */,
 			);
 			path = SVAHomeEntity;
 			sourceTree = "<group>";
@@ -202,6 +206,21 @@
 			children = (
 			);
 			path = SVAHomeExtension;
+			sourceTree = "<group>";
+		};
+		8FE4AD5A2A201ACB0035BFB6 /* SVAInternal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SVAInternal;
+			sourceTree = "<group>";
+		};
+		8FE4AD5B2A201AD30035BFB6 /* SVAExternal */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4AD5C2A201AE40035BFB6 /* SVARates.swift */,
+			);
+			path = SVAExternal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +363,7 @@
 				8FE4AD142A200A5D0035BFB6 /* SceneDelegate.swift in Sources */,
 				8FE4AD4E2A200D310035BFB6 /* SVAHomeIntereactor.swift in Sources */,
 				8FE4AD4C2A200D2A0035BFB6 /* SVAHomePresenter.swift in Sources */,
+				8FE4AD5D2A201AE40035BFB6 /* SVARates.swift in Sources */,
 				8FE4AD592A200F040035BFB6 /* SVAHomeProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

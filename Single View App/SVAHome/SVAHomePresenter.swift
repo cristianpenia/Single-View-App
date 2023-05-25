@@ -17,12 +17,27 @@ class SVAHomePresenter {
 }
 
 extension SVAHomePresenter   :   SVAHomeViewControllerToPresenter {
-
     
+    func getRates() {
+        
+        if let interactor {
+            print("XXXX 0001")
+            interactor.getRates()
+        }
+        
+    }
     
 }
 
 extension SVAHomePresenter   :   SVAHomeInteractorToPresenter {
+    
+    func setRates(success: RatesResponse?, failed:String?) {
+        if let view {
+            print("XXXX 0003")
+            view.setRates(success: success, failed: failed)
+        }
+    }
+    
     
     
 }

@@ -9,16 +9,14 @@ import Foundation
 
 protocol SVAHomeViewControllerToPresenter    :  AnyObject {
     
-//    func goToQR()
-//    func goToReference()
-//    func goToCard()
+    func getRates()
     
 }
 
 
 protocol SVAHomePresenterToInteractor        :   AnyObject {
     
-//    func signIn( model arg : UserRequest )
+    func getRates()
     
 }
 
@@ -27,14 +25,14 @@ protocol SVAHomeInteractorToPresenter        :   AnyObject {
     
 //    func successSignIn( model arg  : UserResponse )
 //    func failureSignIn( messge arg : String )
+    func setRates(success: RatesResponse?, failed:String?)
     
 }
 
 
 protocol SVAHomePresenterToViewController    :   AnyObject {
     
-//    func successSignIn( model arg  : UserResponse )
-//    func failureSignIn( messge arg : String )
+    func setRates(success: RatesResponse?, failed:String?)
     
 }
 
