@@ -56,15 +56,28 @@ extension SVAHomeViewController : SVAHomePresenterToViewController {
     
     func setRates(success: RatesResponse?, failed: String?) {
          
-        if let model = success {
+        if let rates = success?.rates {
             
             dump(success)
             
             DispatchQueue.main.async {
                 
-                self.bodyTextView.text = "\(model)"
                 
                 
+                let ratesBody = """
+USD: \(rates["USD"] ?? 0.0)
+
+EUR: \(rates["EUR"] ?? 0.0)
+
+CAD: \(rates["CAD"] ?? 0.0)
+
+BHD: \(rates["BHD"] ?? 0.0)
+
+PLN: \(rates["PLN"] ?? 0.0)
+
+"""
+                
+                self.bodyTextView.text = "\(ratesBody)"
                 
             }
             
