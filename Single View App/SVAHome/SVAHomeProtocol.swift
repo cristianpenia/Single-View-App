@@ -23,8 +23,6 @@ protocol SVAHomePresenterToInteractor        :   AnyObject {
 
 protocol SVAHomeInteractorToPresenter        :   AnyObject {
     
-//    func successSignIn( model arg  : UserResponse )
-//    func failureSignIn( messge arg : String )
     func setRates(success: RatesResponse?, failed:String?)
     
 }

@@ -15,6 +15,8 @@ class SVAHomeViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyTextView: UITextView!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     // MARK: PROPERTY
     internal var presenter         :   SVAHomeViewControllerToPresenter?
     
@@ -29,7 +31,7 @@ class SVAHomeViewController: UIViewController {
     
     // MARK: FUNC
     private func setup() {
-        
+        activityIndicator.isHidden = true
     }
     
     private func setupUI() {
@@ -42,6 +44,10 @@ class SVAHomeViewController: UIViewController {
         
         
         if let presenter {
+            
+            activityIndicator.isHidden = false
+            activityIndicator.startAnimating()
+            
             print("XXXX 0000")
             presenter.getRates()
         }
@@ -56,6 +62,7 @@ extension SVAHomeViewController : SVAHomePresenterToViewController {
     
     func setRates(success: RatesResponse?, failed: String?) {
          
+        
         if let rates = success?.rates {
             
             dump(success)
@@ -84,6 +91,12 @@ PLN: \(rates["PLN"] ?? 0.0)
         } else {
             print("\(failed ?? "Ocurrio un Error")")
         }
+        
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+        }
+        
         
     }
     

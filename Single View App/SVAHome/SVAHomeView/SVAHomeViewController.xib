@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SVAHomeViewController" customModule="Single_View_App" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="dvd-li-aee" id="nRK-aS-FGD"/>
                 <outlet property="bodyTextView" destination="0pq-YN-u5C" id="Fw1-4J-FfR"/>
                 <outlet property="getRatesButton" destination="D33-jr-36b" id="utW-8z-PW8"/>
                 <outlet property="titleLabel" destination="mHi-Ny-BTp" id="ChR-vL-vNG"/>
@@ -48,15 +49,24 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="dvd-li-aee">
+                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="eeT-Jb-SX0"/>
+                        <constraint firstAttribute="width" constant="20" id="mcO-2n-TPg"/>
+                    </constraints>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D33-jr-36b" secondAttribute="trailing" constant="20" id="1lZ-Df-R4r"/>
+                <constraint firstItem="dvd-li-aee" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="65K-Cd-3Qc"/>
                 <constraint firstItem="mHi-Ny-BTp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="8Oc-h7-dfI"/>
                 <constraint firstItem="mHi-Ny-BTp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="S6c-gx-nCS"/>
                 <constraint firstItem="D33-jr-36b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fcl-Zo-jHv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mHi-Ny-BTp" secondAttribute="trailing" constant="20" id="jIb-bY-1Hn"/>
+                <constraint firstItem="dvd-li-aee" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jju-5V-fFK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="D33-jr-36b" secondAttribute="bottom" constant="20" id="mE2-OC-MPs"/>
                 <constraint firstItem="0pq-YN-u5C" firstAttribute="top" secondItem="mHi-Ny-BTp" secondAttribute="bottom" constant="20" id="ohG-dt-Tis"/>
                 <constraint firstItem="D33-jr-36b" firstAttribute="top" secondItem="0pq-YN-u5C" secondAttribute="bottom" constant="20" id="pWA-WG-uvd"/>
